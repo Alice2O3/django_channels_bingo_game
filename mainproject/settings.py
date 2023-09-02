@@ -15,7 +15,7 @@ import os
 SECRET_KEY = 'django-insecure-bmeuna$dgi^h9@clvdpr2(cvty#q8o91aqhv582e2%t+5gc#ig'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -131,4 +131,3 @@ django_heroku.settings(locals())
 if not DEBUG:
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
     SECURE_SSL_REDIRECT = True
-
